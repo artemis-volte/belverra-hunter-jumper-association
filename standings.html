@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Standings | BHJA</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Belverra Hunter/Jumper Association home">
+      <img class="brand-logo" src="assets/bhja-logo-transparent.png" alt="BHJA horse and rider logo" />
+      <span class="brand-text">
+        <strong>Belverra Hunter/Jumper Association</strong>
+        <em>Hunters • Jumpers • Belverra</em>
+      </span>
+    </a>
+    <button class="menu-toggle" data-menu-toggle aria-label="Open navigation">☰</button>
+    <nav class="site-nav" data-nav>
+      <a href="index.html">Home</a>
+      <a href="shows.html">Shows & Results</a>
+      <a href="standings.html" class="active">Standings</a>
+      <a href="hunters.html">Hunter Program</a>
+      <a href="jumpers.html">Jumper Program</a>
+      <a href="rulebook.html">Rulebook</a>
+      <a href="awards.html">Awards / HOF</a>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="page-title">
+      <p class="eyebrow">Season leaderboards</p>
+      <h1>BHJA Standings</h1>
+      <p>Standings are calculated automatically from <code>results.csv</code>. Leaderboard points determine awards; qualification points and top-three counts determine advancement.</p>
+    </section>
+
+    <section class="summary-grid" data-standings-summary>
+      <div class="stat-card"><span>Horse Points</span><strong>—</strong></div>
+      <div class="stat-card"><span>Hunter Results</span><strong>—</strong></div>
+      <div class="stat-card"><span>Jumper Results</span><strong>—</strong></div>
+      <div class="stat-card"><span>Stables</span><strong>—</strong></div>
+    </section>
+
+    <section class="standings-shell">
+      <div class="tabs" role="tablist" aria-label="Standings categories">
+        <button class="tab active" data-tab="overall">Overall Horses</button>
+        <button class="tab" data-tab="hunters">Hunter Horses</button>
+        <button class="tab" data-tab="jumpers">Jumper Horses</button>
+        <button class="tab" data-tab="division">By Division / Level</button>
+        <button class="tab" data-tab="stable">Stable / Owner</button>
+        <button class="tab" data-tab="green">Green Hunter</button>
+        <button class="tab" data-tab="young">Young Jumper</button>
+        <button class="tab" data-tab="moveup">Move-Up Tracker</button>
+      </div>
+
+      <div class="panel active" data-panel="overall">
+        <div class="table-card"><div class="table-card-header"><h2>Overall Horse Standings</h2><p>All hunter and jumper points combined.</p></div><div class="table-scroll"><table class="data-table" data-table="overall"></table></div></div>
+      </div>
+      <div class="panel" data-panel="hunters">
+        <div class="table-card"><div class="table-card-header"><h2>Hunter Horse Standings</h2><p>Hunter results only.</p></div><div class="table-scroll"><table class="data-table" data-table="hunters"></table></div></div>
+      </div>
+      <div class="panel" data-panel="jumpers">
+        <div class="table-card"><div class="table-card-header"><h2>Jumper Horse Standings</h2><p>Jumper results only.</p></div><div class="table-scroll"><table class="data-table" data-table="jumpers"></table></div></div>
+      </div>
+      <div class="panel" data-panel="division">
+        <div class="table-card">
+          <div class="table-card-header responsive-header"><div><h2>Division / Level Standings</h2><p>Choose any hunter division or jumper level.</p></div><label class="inline-filter">Level <select data-level-standings></select></label></div>
+          <div class="table-scroll"><table class="data-table" data-table="division"></table></div>
+        </div>
+      </div>
+      <div class="panel" data-panel="stable">
+        <div class="table-card"><div class="table-card-header"><h2>Stable / Owner Standings</h2><p>Totals all points for each stable and owner.</p></div><div class="table-scroll"><table class="data-table" data-table="stable"></table></div></div>
+      </div>
+      <div class="panel" data-panel="green">
+        <div class="table-card"><div class="table-card-header"><h2>Green Hunter Standings</h2><p>Rows whose level includes Green Hunter.</p></div><div class="table-scroll"><table class="data-table" data-table="green"></table></div></div>
+      </div>
+      <div class="panel" data-panel="young">
+        <div class="table-card"><div class="table-card-header"><h2>Young Jumper Standings</h2><p>5-Year-Old, 6-Year-Old, and 7-Year-Old jumper classes.</p></div><div class="table-scroll"><table class="data-table" data-table="young"></table></div></div>
+      </div>
+      <div class="panel" data-panel="moveup">
+        <div class="table-card"><div class="table-card-header"><h2>Move-Up Tracker</h2><p>Hunter rows use top-three counts. Jumper rows use qualification points.</p></div><div class="table-scroll"><table class="data-table" data-table="moveup"></table></div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><p>Belverra Hunter/Jumper Association • A fictional Topline association</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>

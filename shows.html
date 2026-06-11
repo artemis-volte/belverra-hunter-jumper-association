@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shows & Results | BHJA</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Belverra Hunter/Jumper Association home">
+      <img class="brand-logo" src="assets/bhja-logo-transparent.png" alt="BHJA horse and rider logo" />
+      <span class="brand-text">
+        <strong>Belverra Hunter/Jumper Association</strong>
+        <em>Hunters • Jumpers • Belverra</em>
+      </span>
+    </a>
+    <button class="menu-toggle" data-menu-toggle aria-label="Open navigation">☰</button>
+    <nav class="site-nav" data-nav>
+      <a href="index.html">Home</a>
+      <a href="shows.html" class="active">Shows & Results</a>
+      <a href="standings.html">Standings</a>
+      <a href="hunters.html">Hunter Program</a>
+      <a href="jumpers.html">Jumper Program</a>
+      <a href="rulebook.html">Rulebook</a>
+      <a href="awards.html">Awards / HOF</a>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="page-title">
+      <p class="eyebrow">Season archive</p>
+      <h1>Shows & Results</h1>
+      <p>Every result shown here is read from <code>results.csv</code>. Add new rows to the CSV after each Topline show, then upload the edited file with the website.</p>
+    </section>
+
+    <section class="toolbar card soft">
+      <label>Discipline
+        <select data-filter="discipline"><option value="all">All</option></select>
+      </label>
+      <label>Level / Division
+        <select data-filter="level"><option value="all">All</option></select>
+      </label>
+      <label>Show
+        <select data-filter="show"><option value="all">All</option></select>
+      </label>
+      <button class="button secondary" data-reset-filters>Reset</button>
+    </section>
+
+    <section class="section-wrap">
+      <div class="table-card">
+        <div class="table-card-header">
+          <h2>Result Rows</h2>
+          <p data-result-count>Loading results…</p>
+        </div>
+        <div class="table-scroll">
+          <table class="data-table" data-results-table>
+            <thead><tr><th>Date</th><th>Show</th><th>Discipline</th><th>Level</th><th>Class</th><th>Place</th><th>Score</th><th>Horse</th><th>Breed</th><th>Owner</th><th>Stable</th><th>Pts</th></tr></thead>
+            <tbody><tr><td colspan="12">Loading…</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><p>Belverra Hunter/Jumper Association • A fictional Topline association</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
