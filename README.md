@@ -19,10 +19,10 @@ This is a static website for the fictional Belverra Hunter/Jumper Association in
 
 ## Updating results
 
-Use Topline's show-results CSV export as `results.csv`. The website expects this exact column order:
+Use the BHJA / Topline show-results CSV export as `results.csv`. The website now expects the actual export headers from the first BHJA show:
 
 ```csv
-Species,Show,Date,Class,Discipline,Level Key,Level,Place,Score,Animal,Breed,Stable,Owner
+Show ID,Show Name,Show Date,Game Year,Host,Class,Discipline,Level,Section,Final,Placing,Score,Eliminated,Animal ID,Animal Name,Horse/Dog,Owner,Stable/Kennel
 ```
 
 The site calculates points automatically from `Place`:
@@ -47,3 +47,8 @@ To host on Netlify, drag the unzipped folder into Netlify's deploy area. To upda
 ## Branding update
 
 This version uses the BHJA horse-and-rider line-art logo and a warmer, more modern Southern estate palette: ivory, linen, taupe, espresso brown, muted olive, clay, and rosewood. The leaderboard logic is unchanged from the Topline CSV version.
+
+
+## Opening Classic Data
+
+This package includes `results.csv` from the BHJA Opening Classic held on 2026-06-18. It contains 48 result rows, 16 horses, and 6 stables.

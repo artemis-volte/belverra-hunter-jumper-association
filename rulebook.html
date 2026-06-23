@@ -9,7 +9,7 @@
 <body>
   <header class="site-header">
     <a class="brand" href="index.html" aria-label="Belverra Hunter/Jumper Association home">
-      <img class="brand-logo" src="bhja-logo-transparent.png" alt="BHJA horse and rider logo" />
+      <img class="brand-logo" src="assets/bhja-logo-transparent.png" alt="BHJA horse and rider logo" />
       <span class="brand-text">
         <strong>Belverra Hunter/Jumper Association</strong>
         <em>Hunters • Jumpers • Belverra</em>
@@ -45,15 +45,15 @@
 
     <section class="section-wrap prose-card">
       <h2>CSV Rules</h2>
-      <p>The site is set up to read the Topline show-results CSV export directly. Replace <code>results.csv</code> with the exported file, keeping this exact column order:</p>
-      <pre><code>Species,Show,Date,Class,Discipline,Level Key,Level,Place,Score,Animal,Breed,Stable,Owner</code></pre>
+      <p>The site is set up to read the BHJA / Topline show-results CSV export directly. Replace <code>results.csv</code> with the exported file, keeping this exact column order:</p>
+      <pre><code>Show ID,Show Name,Show Date,Game Year,Host,Class,Discipline,Level,Section,Final,Placing,Score,Eliminated,Animal ID,Animal Name,Horse/Dog,Owner,Stable/Kennel</code></pre>
       <p>The leaderboard script automatically converts each row into BHJA standings data:</p>
       <ul>
         <li><code>Animal</code> is treated as the horse name.</li>
         <li><code>Place</code> is used to calculate leaderboard points: 1st = 10, 2nd = 7, 3rd = 5, 4th = 3, 5th = 1.</li>
         <li>Hunter rows automatically earn <code>1</code> top-three credit when the placing is 1st, 2nd, or 3rd.</li>
         <li>Jumper rows automatically use the placing points as qualification points for move-up tracking.</li>
-        <li>Rows for non-horse species are ignored if the <code>Species</code> column is present.</li>
+        <li>Rows for non-horse species are ignored if the <code>Horse/Dog</code> or <code>Species</code> column is present.</li>
       </ul>
       <p>You no longer need to manually add columns for <code>leaderboard_points</code>, <code>qualification_points</code>, or <code>top_three</code>. The website calculates those from the Topline export.</p>
     </section>

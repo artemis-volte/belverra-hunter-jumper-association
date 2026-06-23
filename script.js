@@ -92,29 +92,33 @@ function parsePlace(value) {
 }
 
 function normalizeRow(row) {
-  // Supports the current Topline export format:
+  // Supports the actual BHJA / Topline show-results export:
+  // Show ID, Show Name, Show Date, Game Year, Host, Class, Discipline, Level, Section, Final,
+  // Placing, Score, Eliminated, Animal ID, Animal Name, Horse/Dog, Owner, Stable/Kennel
+  //
+  // Also supports the earlier simplified website CSV:
   // Species, Show, Date, Class, Discipline, Level Key, Level, Place, Score, Animal, Breed, Stable, Owner
-  // Also keeps backward compatibility with the first hand-made CSV format.
-  const placing = parsePlace(getField(row, "Place", "placing", "place"));
+  const placing = parsePlace(getField(row, "Place", "Placing", "placing", "place"));
   const discipline = normalizeDiscipline(getField(row, "Discipline", "discipline"));
   const leaderboardPoints = toNumber(getField(row, "leaderboard_points", "Leaderboard Points")) || POINT_SCALE[placing] || 0;
   const exportedTopThree = getField(row, "top_three", "Top Three");
   const exportedQualification = getField(row, "qualification_points", "Qualification Points");
+  const level = getField(row, "Level", "level") || getField(row, "Level Key", "level_key", "levelKey");
 
   return {
-    species: getField(row, "Species", "species"),
-    date: getField(row, "Date", "date"),
-    show: getField(row, "Show", "show"),
+    species: getField(row, "Species", "species", "Horse/Dog", "Horse Dog"),
+    date: getField(row, "Date", "date", "Show Date"),
+    show: getField(row, "Show", "show", "Show Name"),
     discipline,
-    level_key: getField(row, "Level Key", "level_key", "levelKey"),
-    level: getField(row, "Level", "level") || getField(row, "Level Key", "level_key", "levelKey"),
-    class_name: getField(row, "Class", "class_name", "Class Name"),
+    level_key: getField(row, "Level Key", "level_key", "levelKey") || level,
+    level,
+    class_name: getField(row, "Class", "class_name", "Class Name", "Section") || level,
     placing,
     score: getField(row, "Score", "score"),
-    horse: getField(row, "Animal", "animal", "Horse", "horse"),
+    horse: getField(row, "Animal", "animal", "Animal Name", "Horse", "horse"),
     breed: getField(row, "Breed", "breed"),
     owner: getField(row, "Owner", "owner"),
-    stable: getField(row, "Stable", "stable"),
+    stable: getField(row, "Stable", "stable", "Stable/Kennel", "Kennel"),
     leaderboard_points: leaderboardPoints,
     qualification_points: exportedQualification !== "" ? toNumber(exportedQualification) : (discipline === "Jumper" ? leaderboardPoints : 0),
     top_three: exportedTopThree !== "" ? toNumber(exportedTopThree) : (discipline === "Hunter" && placing >= 1 && placing <= 3 ? 1 : 0)
@@ -263,13 +267,26 @@ function isYoungJumper(row) {
   return row.discipline === "Jumper" && /(5-Year-Old|6-Year-Old|7-Year-Old|Young Horse)/i.test(row.level);
 }
 
+function comparableLevel(level) {
+  return String(level || "")
+    .replace(/\s+Qual\.\s+Only/gi, "")
+    .replace(/\s+/g, " ")
+    .trim()
+    .toLowerCase();
+}
+
+function findLevelIndex(levels, currentLevel) {
+  const target = comparableLevel(currentLevel);
+  return levels.findIndex(item => comparableLevel(item.level) === target);
+}
+
 function nextHunterLevel(currentLevel) {
-  const index = HUNTER_LEVELS.findIndex(item => item.level === currentLevel);
+  const index = findLevelIndex(HUNTER_LEVELS, currentLevel);
   return index >= 0 && index < HUNTER_LEVELS.length - 1 ? HUNTER_LEVELS[index + 1].level : null;
 }
 
 function nextJumperLevel(currentLevel) {
-  const index = JUMPER_LEVELS.findIndex(item => item.level === currentLevel);
+  const index = findLevelIndex(JUMPER_LEVELS, currentLevel);
   return index >= 0 && index < JUMPER_LEVELS.length - 1 ? JUMPER_LEVELS[index + 1].level : null;
 }
 
@@ -287,7 +304,7 @@ function moveUpRows(rows) {
     }
     if (discipline === "Jumper") {
       const earned = sum(group.map(r => r.qualification_points));
-      const config = JUMPER_LEVELS.find(item => item.level === level);
+      const config = JUMPER_LEVELS.find(item => comparableLevel(item.level) === comparableLevel(level));
       const required = config?.nextRequirement ?? null;
       const next = nextJumperLevel(level);
       const needed = required == null ? 0 : Math.max(required - earned, 0);
