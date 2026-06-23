@@ -1,25 +1,49 @@
-Species,Show,Date,Class,Discipline,Level Key,Level,Place,Score,Animal,Breed,Stable,Owner
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
+"Show ID","Show Name","Show Date","Game Year",Host,Class,Discipline,Level,Section,Final,Placing,Score,Eliminated,"Animal ID","Animal Name",Horse/Dog,Owner,Stable/Kennel
+24,"BHJA Opening Classic",2026-06-18,"Year 27",Artemis,"3'6"" / 1.10m","Show Jumping","3'6"" / 1.10m",,,1,5.01,,48,Balthazar,Horse,Shanny,"Belmere Court"
+24,"BHJA Opening Classic",2026-06-18,"Year 27",Artemis,"3'6"" / 1.10m","Show Jumping","3'6"" / 1.10m",,,1,6.06,,48,Balthazar,Horse,Shanny,"Belmere Court"
+24,"BHJA Opening Classic",2026-06-18,"Year 27",Artemis,"3'6"" / 1.10m","Show Jumping","3'6"" / 1.10m",,,1,0,,48,Balthazar,Horse,Shanny,"Belmere Court"
+24,"BHJA Opening Classic",2026-06-18,"Year 27",Artemis,"3'6"" / 1.10m","Show Jumping","3'6"" / 1.10m",,,2,8.12,,73,"Glendale AL",Horse,Starry,"Aileach Stud"
+24,"BHJA Opening Classic",2026-06-18,"Year 27",Artemis,"3'6"" / 1.10m","Show Jumping","3'6"" / 1.10m",,,2,15.99,,73,"Glendale AL",Horse,Starry,"Aileach Stud"
+24,"BHJA Opening Classic",2026-06-18,"Year 27",Artemis,"3'6"" / 1.10m","Show Jumping","3'6"" / 1.10m",,,2,3.88,,73,"Glendale AL",Horse,Starry,"Aileach Stud"
+24,"BHJA Opening Classic",2026-06-18,"Year 27",Artemis,"4'6"" / 1.40m","Show Jumping","4'6"" / 1.40m",,,1,0.16,,57,Aldric,Horse,Shanny,"Belmere Court"
+24,"BHJA Opening Classic",2026-06-18,"Year 27",Artemis,"4'6"" / 1.40m","Show Jumping","4'6"" / 1.40m",,,1,0.7,,57,Aldric,Horse,Shanny,"Belmere Court"
+24,"BHJA Opening Classic",2026-06-18,"Year 27",Artemis,"4'6"" / 1.40m","Show Jumping","4'6"" / 1.40m",,,1,3.92,,57,Aldric,Horse,Shanny,"Belmere Court"
+24,"BHJA Opening Classic",2026-06-18,"Year 27",Artemis,"4'6"" / 1.40m","Show Jumping","4'6"" / 1.40m",,,2,4.9,,42,Orion,Horse,Artemis,"Oak Hill Farms"
+24,"BHJA Opening Classic",2026-06-18,"Year 27",Artemis,"4'6"" / 1.40m","Show Jumping","4'6"" / 1.40m",,,2,7.82,,42,Orion,Horse,Artemis,"Oak Hill Farms"
+24,"BHJA Opening Classic",2026-06-18,"Year 27",Artemis,"4'6"" / 1.40m","Show Jumping","4'6"" / 1.40m",,,2,7.62,,42,Orion,Horse,Artemis,"Oak Hill Farms"
+24,"BHJA Opening Classic",2026-06-18,"Year 27",Artemis,Crossrails,Hunters,"Crossrails Hunter",,,1,45.13,,22,Prosecco,Horse,Artemis,"Oak Hill Farms"
+24,"BHJA Opening Classic",2026-06-18,"Year 27",Artemis,Crossrails,Hunters,"Crossrails Hunter",,,1,46.05,,23,Instagram,Horse,Artemis,"Oak Hill Farms"
+24,"BHJA Opening Classic",2026-06-18,"Year 27",Artemis,Crossrails,Hunters,"Crossrails Hunter",,,1,46.02,,22,Prosecco,Horse,Artemis,"Oak Hill Farms"
+24,"BHJA Opening Classic",2026-06-18,"Year 27",Artemis,Crossrails,"Show Jumping","Crossrails / 2'",,,1,0.44,,36,Lemenach,Horse,Bertie,"Chromewood Farm"
+24,"BHJA Opening Classic",2026-06-18,"Year 27",Artemis,Crossrails,"Show Jumping","Crossrails / 2'",,,1,1.56,,82,"Oubliette CC",Horse,Dusty,"Cedar Creek"
+24,"BHJA Opening Classic",2026-06-18,"Year 27",Artemis,Crossrails,"Show Jumping","Crossrails / 2'",,,1,0,,94,Brandywine,Horse,Danyel,Stonehollow
+24,"BHJA Opening Classic",2026-06-18,"Year 27",Artemis,Crossrails,Hunters,"Crossrails Hunter",,,2,43.91,,24,"Cafe au Lait",Horse,Artemis,"Oak Hill Farms"
+24,"BHJA Opening Classic",2026-06-18,"Year 27",Artemis,Crossrails,Hunters,"Crossrails Hunter",,,2,45.57,,24,"Cafe au Lait",Horse,Artemis,"Oak Hill Farms"
+24,"BHJA Opening Classic",2026-06-18,"Year 27",Artemis,Crossrails,Hunters,"Crossrails Hunter",,,2,44.89,,24,"Cafe au Lait",Horse,Artemis,"Oak Hill Farms"
+24,"BHJA Opening Classic",2026-06-18,"Year 27",Artemis,Crossrails,"Show Jumping","Crossrails / 2'",,,2,0.83,,72,"Smokesong AL",Horse,Starry,"Aileach Stud"
+24,"BHJA Opening Classic",2026-06-18,"Year 27",Artemis,Crossrails,"Show Jumping","Crossrails / 2'",,,2,1.93,,20,Manhattan,Horse,Artemis,"Oak Hill Farms"
+24,"BHJA Opening Classic",2026-06-18,"Year 27",Artemis,Crossrails,"Show Jumping","Crossrails / 2'",,,2,0,,21,Madelyne,Horse,Artemis,"Oak Hill Farms"
+24,"BHJA Opening Classic",2026-06-18,"Year 27",Artemis,Crossrails,"Show Jumping","Crossrails / 2'",,,3,0,,72,"Smokesong AL",Horse,Starry,"Aileach Stud"
+24,"BHJA Opening Classic",2026-06-18,"Year 27",Artemis,Crossrails,Hunters,"Crossrails Hunter",,,3,43.62,,23,Instagram,Horse,Artemis,"Oak Hill Farms"
+24,"BHJA Opening Classic",2026-06-18,"Year 27",Artemis,Crossrails,Hunters,"Crossrails Hunter",,,3,44.71,,22,Prosecco,Horse,Artemis,"Oak Hill Farms"
+24,"BHJA Opening Classic",2026-06-18,"Year 27",Artemis,Crossrails,Hunters,"Crossrails Hunter",,,3,44.7,,23,Instagram,Horse,Artemis,"Oak Hill Farms"
+24,"BHJA Opening Classic",2026-06-18,"Year 27",Artemis,Crossrails,"Show Jumping","Crossrails / 2'",,,3,2.02,,31,Quantico,Horse,Bertie,"Chromewood Farm"
+24,"BHJA Opening Classic",2026-06-18,"Year 27",Artemis,Crossrails,"Show Jumping","Crossrails / 2'",,,3,4.86,,94,Brandywine,Horse,Danyel,Stonehollow
+24,"BHJA Opening Classic",2026-06-18,"Year 27",Artemis,Crossrails,"Show Jumping","Crossrails / 2'",,,4,0,,31,Quantico,Horse,Bertie,"Chromewood Farm"
+24,"BHJA Opening Classic",2026-06-18,"Year 27",Artemis,Crossrails,"Show Jumping","Crossrails / 2'",,,4,4.04,,33,Odette,Horse,Bertie,"Chromewood Farm"
+24,"BHJA Opening Classic",2026-06-18,"Year 27",Artemis,Crossrails,"Show Jumping","Crossrails / 2'",,,4,6.32,,31,Quantico,Horse,Bertie,"Chromewood Farm"
+24,"BHJA Opening Classic",2026-06-18,"Year 27",Artemis,Crossrails,"Show Jumping","Crossrails / 2'",,,5,3.81,,36,Lemenach,Horse,Bertie,"Chromewood Farm"
+24,"BHJA Opening Classic",2026-06-18,"Year 27",Artemis,Crossrails,"Show Jumping","Crossrails / 2'",,,5,4.38,,25,Cosmopolitan,Horse,Artemis,"Oak Hill Farms"
+24,"BHJA Opening Classic",2026-06-18,"Year 27",Artemis,Crossrails,"Show Jumping","Crossrails / 2'",,,5,7.73,,36,Lemenach,Horse,Bertie,"Chromewood Farm"
+24,"BHJA Opening Classic",2026-06-18,"Year 27",Artemis,Crossrails,"Show Jumping","Crossrails / 2'",,,6,3.81,,25,Cosmopolitan,Horse,Artemis,"Oak Hill Farms"
+24,"BHJA Opening Classic",2026-06-18,"Year 27",Artemis,Crossrails,"Show Jumping","Crossrails / 2'",,,6,4.94,,82,"Oubliette CC",Horse,Dusty,"Cedar Creek"
+24,"BHJA Opening Classic",2026-06-18,"Year 27",Artemis,Crossrails,"Show Jumping","Crossrails / 2'",,,6,7.88,,25,Cosmopolitan,Horse,Artemis,"Oak Hill Farms"
+24,"BHJA Opening Classic",2026-06-18,"Year 27",Artemis,Crossrails,"Show Jumping","Crossrails / 2'",,,7,3.81,,20,Manhattan,Horse,Artemis,"Oak Hill Farms"
+24,"BHJA Opening Classic",2026-06-18,"Year 27",Artemis,Crossrails,"Show Jumping","Crossrails / 2'",,,7,5.36,,20,Manhattan,Horse,Artemis,"Oak Hill Farms"
+24,"BHJA Opening Classic",2026-06-18,"Year 27",Artemis,Crossrails,"Show Jumping","Crossrails / 2'",,,7,10.85,,72,"Smokesong AL",Horse,Starry,"Aileach Stud"
+24,"BHJA Opening Classic",2026-06-18,"Year 27",Artemis,Crossrails,"Show Jumping","Crossrails / 2'",,,8,7.62,,33,Odette,Horse,Bertie,"Chromewood Farm"
+24,"BHJA Opening Classic",2026-06-18,"Year 27",Artemis,Crossrails,"Show Jumping","Crossrails / 2'",,,8,5.87,,21,Madelyne,Horse,Artemis,"Oak Hill Farms"
+24,"BHJA Opening Classic",2026-06-18,"Year 27",Artemis,Crossrails,"Show Jumping","Crossrails / 2'",,,8,13.96,,21,Madelyne,Horse,Artemis,"Oak Hill Farms"
+24,"BHJA Opening Classic",2026-06-18,"Year 27",Artemis,Crossrails,"Show Jumping","Crossrails / 2'",,,9,7.62,,82,"Oubliette CC",Horse,Dusty,"Cedar Creek"
+24,"BHJA Opening Classic",2026-06-18,"Year 27",Artemis,Crossrails,"Show Jumping","Crossrails / 2'",,,9,8.63,,94,Brandywine,Horse,Danyel,Stonehollow
+24,"BHJA Opening Classic",2026-06-18,"Year 27",Artemis,Crossrails,"Show Jumping","Crossrails / 2'",,,9,16.82,,33,Odette,Horse,Bertie,"Chromewood Farm"
